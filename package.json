@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/malte-wessel/react-custom-scrollbars/issues"
   },
-  "homepage": "https://github.com/malte-wessel/react-custom-scrollbars",
+  "homepage": "https://github.com/tv1ster/react-custom-scrollbars-osx-fork",
   "devDependencies": {
     "babel-cli": "^6.2.0",
     "babel-core": "^6.2.1",
