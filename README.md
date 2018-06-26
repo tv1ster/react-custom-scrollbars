@@ -1,9 +1,5 @@
-react-custom-scrollbars
+react-custom-scrollbars-osx-fork
 =========================
-
-[![npm](https://img.shields.io/badge/npm-react--custom--scrollbars-brightgreen.svg?style=flat-square)]()
-[![npm version](https://img.shields.io/npm/v/react-custom-scrollbars.svg?style=flat-square)](https://www.npmjs.com/package/react-custom-scrollbars)
-[![npm downloads](https://img.shields.io/npm/dm/react-custom-scrollbars.svg?style=flat-square)](https://www.npmjs.com/package/react-custom-scrollbars)
 
 * frictionless native browser scrolling
 * native scrollbars for mobile devices
@@ -16,6 +12,15 @@ react-custom-scrollbars
 * well tested, 100% code coverage
 
 **[Demos](http://malte-wessel.github.io/react-custom-scrollbars/) · [Documentation](https://github.com/malte-wessel/react-custom-scrollbars/tree/master/docs)**
+
+# Fork notes
+This fork fixes problem with OSX. In OSX scroll can be hidden even on `overflow: scroll`. And `react-custom-scrollbars` need scroll to be visible to count it width, otherwise native scroll is shown. Hence we are adding `.react-custom-scrollbars-fix` class to element, which counts overflow. You can add styles like
+```css
+.react-custom-scrollbars-fix::-webkit-scrollbar {
+  width: 7px;
+}
+```
+inside your project to fix that behavior.
 
 ## Installation
 ```bash
