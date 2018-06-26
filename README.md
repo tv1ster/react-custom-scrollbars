@@ -1,4 +1,4 @@
-react-custom-scrollbars-osx-fork
+react-custom-scrollbars-fork
 =========================
 
 * frictionless native browser scrolling
